@@ -81,7 +81,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Global.asax" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="css\heroic-features.css" />
+    <Content Include="Index.html" />
+    <Content Include="Scripts\jquery.js" />
     <Content Include="ProjectReadme.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -94,6 +102,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Downloads\ExampleCFGFile.docx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
