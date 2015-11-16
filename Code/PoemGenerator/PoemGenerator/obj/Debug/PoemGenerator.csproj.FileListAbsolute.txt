@@ -51,6 +51,5 @@ C:\Users\prave\Documents\GitHub\RandomPoemGenerator\Code\PoemGenerator\PoemGener
 C:\Users\prave\Documents\GitHub\RandomPoemGenerator\Code\PoemGenerator\PoemGenerator\bin\System.Net.Http.Formatting.xml
 C:\Users\prave\Documents\GitHub\RandomPoemGenerator\Code\PoemGenerator\PoemGenerator\bin\System.Web.Http.xml
 C:\Users\prave\Documents\GitHub\RandomPoemGenerator\Code\PoemGenerator\PoemGenerator\bin\System.Web.Http.WebHost.xml
-C:\Users\prave\Documents\GitHub\RandomPoemGenerator\Code\PoemGenerator\PoemGenerator\obj\Debug\PoemGenerator.csprojResolveAssemblyReference.cache
 C:\Users\prave\Documents\GitHub\RandomPoemGenerator\Code\PoemGenerator\PoemGenerator\obj\Debug\PoemGenerator.dll
 C:\Users\prave\Documents\GitHub\RandomPoemGenerator\Code\PoemGenerator\PoemGenerator\obj\Debug\PoemGenerator.pdb

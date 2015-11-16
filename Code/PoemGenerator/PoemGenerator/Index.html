@@ -17,6 +17,18 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <style>
+        #fileDisplayArea {
+  margin-top: 2em;
+  width: 100%;
+  overflow-x: auto;
+}
+    </style>
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
 </head>
 <body>
     <!-- Navigation -->
@@ -56,35 +68,54 @@
         <header class="jumbotron hero-spacer">
             <h1>Generate a poem !</h1>
             <p>Upload a CFG of how a poem should look like ! and Generate the poem</p>
-            <input class="" type="file"/>
-            <hr />
-            <p>
-                <a class="btn btn-primary btn-large">Call to action!</a>
-            </p>
-        </header>
+            <!--<input class="" type="file" id="files" name="files[]"/>-->
+            <form name="form1" method="post" enctype="multipart/form-data" action="api/ApiTunnel">
+                
+                <div>
+                    <label for="image1">Upload Text File !</label>
+                    <span class="btn btn-default btn-file">
+                        Browse <input class="" name="textFile" type="file" />
+                    </span>
+                
+                    <input class="btn btn-primary btn-large" type="submit" value="Submit" />
+                </div>
+            </form>
+           
+                
+</header>
         <hr>
         <!-- Title -->
         <div class="row">
             <div class="col-lg-12">
-                <h3>Download an example CFG file !!</h3>
-                
+                <h3>example CFG file !!</h3>
+
             </div>
         </div>
-        
+
         <hr>
+        <pre id="fileDisplayArea">POEM: <LINE> <LINE> <LINE> <LINE> <LINE>
+LINE: <NOUN>|<PREPOSITION>|<PRONOUN> $LINEBREAK
+ADJECTIVE: black|white|dark|light|bright|murky|muddy|clear <NOUN>|<ADJECTIVE>|$END
+NOUN: heart|sun|moon|thunder|fire|time|wind|sea|river|flavor|wave|willow|rain|tree|flower|field|meadow|pasture|harvest|water|father|mother|brother|sister <VERB>|<PREPOSITION>|$END
+PRONOUN: my|your|his|her <NOUN>|<ADJECTIVE>
+VERB: runs|walks|stands|climbs|crawls|flows|flies|transcends|ascends|descends|sinks <PREPOSITION>|<PRONOUN>|$END
+PREPOSITION: above|across|against|along|among|around|before|behind|beneath|beside|between|beyond|during|inside|onto|outside|under|underneath|upon|with|without|through <NOUN>|<PRONOUN>|<ADJECTIVE>
+</pre>
+
+        <hr />
         <!-- Footer -->
         <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+        <div class="row">
+        <div class="col-lg-12">
+        <p>Copyright &copy; Your Website 2014</p>
                 </div>
             </div>
         </footer>
     </div>
+    <output id="list"></output>
+    
     <!-- /.container -->
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    
 </body>
 </html>
